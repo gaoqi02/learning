@@ -29,7 +29,8 @@ public class Test {
     }
 
     public void methodC(){
-        StackTraceElement[] stacks = Thread.currentThread().getStackTrace();
+//        StackTraceElement[] stacks = Thread.currentThread().getStackTrace();
+        StackTraceElement[] stacks = new Throwable().getStackTrace();
         for(StackTraceElement s: stacks){
             System.out.println("-------"+s.getMethodName()+" : "+s);
         }
