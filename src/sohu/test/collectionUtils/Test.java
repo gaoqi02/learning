@@ -14,7 +14,7 @@ import java.util.List;
 public class Test {
 
     public static void main(String[] args) {
-        List<User> users = new ArrayList<>();
+        List<User> users = new ArrayList<User>();
         String chars = "aaaaaaaaaaaaaaaaaaaaa";
         System.out.println(chars.charAt((int)(Math.random() * 26)));
 
@@ -29,7 +29,7 @@ public class Test {
     }
 
     private HashSet<String> collect(List<User> users) {
-        HashSet<String> set = new HashSet<>(CollectionUtils.collect(users, new Transformer() {
+        HashSet<String> set = new HashSet<String>(CollectionUtils.collect(users, new Transformer() {
             @Override
             public Object transform(Object o) {
                 User u = (User) o;
