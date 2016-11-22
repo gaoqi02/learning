@@ -20,9 +20,9 @@ public class DemoFileUploader {
     public static void main(String args[]) throws Exception
     {
         DemoFileUploader fileUpload = new DemoFileUploader () ;
-        File file = new File("C:\\Users\\qigao212074\\Desktop\\testAZKABAN\\123.zip") ;
+        File file = new File("C:\\Users\\qigao212074\\Desktop\\testAZKABAN\\test.job") ;
         //Upload the file
-        fileUpload.executeMultiPartRequest("https://10.2.177.219:8443/manager?ajax=upload",
+        fileUpload.executeMultiPartRequest("http://localhost:8080/bigdata-web/api/job_design/job/file",
                 file, file.getName(), "File Uploaded :: Tulips.jpg") ;
     }
 

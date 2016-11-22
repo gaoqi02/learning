@@ -10,13 +10,13 @@ public class TestTry {
     }
 
     public static String test() {
+        String str = "asd";
         try {
-            System.out.print("try");
+            str += "!";
+            throw new Exception();
 
         } catch (Exception e) {
-            System.out.print("exception");
-        } finally {
-            System.out.print("finally");
+            System.out.print(str);
         }
         return "1231";
 
