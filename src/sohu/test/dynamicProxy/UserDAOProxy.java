@@ -9,6 +9,24 @@ import java.lang.reflect.Method;
 public class UserDAOProxy implements InvocationHandler {
 
     private Object target;
+    private String bStr;
+    private String aStr;
+
+    public String getbStr() {
+        return bStr;
+    }
+
+    public void setbStr(String bStr) {
+        this.bStr = bStr;
+    }
+
+    public String getaStr() {
+        return aStr;
+    }
+
+    public void setaStr(String aStr) {
+        this.aStr = aStr;
+    }
 
     public void setTarget(Object target) {
         this.target = target;
@@ -27,7 +45,7 @@ public class UserDAOProxy implements InvocationHandler {
             throws Throwable {
         // TODO Auto-generated method stub
         beforeMethod(method);
-        method.invoke(target, args);
+//        method.invoke(target, args);
         afterMethod(method);
         return null;
     }

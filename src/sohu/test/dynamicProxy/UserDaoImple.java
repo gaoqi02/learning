@@ -7,6 +7,6 @@ public class UserDaoImple implements IUserDao {
 
     @Override
     public void save(User user) {
-        System.out.print("asd");
+        System.out.println("asd");
     }
 }

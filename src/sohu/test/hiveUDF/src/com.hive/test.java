@@ -1,3 +1,5 @@
+package com.hive;
+
 import java.sql.DriverManager;
 
 /**

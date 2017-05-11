@@ -1,3 +1,5 @@
+package com.hive;
+
 import org.apache.hadoop.hive.ql.exec.UDF;
 
 /**
@@ -6,11 +8,8 @@ import org.apache.hadoop.hive.ql.exec.UDF;
 public class helloUDF extends UDF {
 
     public String evaluate(String str) {
-
         try {
-
             return "HelloWorld " + str;
-
         } catch (Exception e) {
 
             return null;

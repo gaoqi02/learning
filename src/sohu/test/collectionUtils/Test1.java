@@ -14,8 +14,8 @@ import java.util.List;
 public class Test1 {
 
     public static void main(String[] args) {
-        String[] arrayA = new String[] { "1", "2", "3", "3", "4", "5" };
-        String[] arrayB = new String[] { "3", "4", "4", "5", "6", "7" };
+        String[] arrayA = new String[] { "1", "2", "3",  "4", "5" };
+        String[] arrayB = new String[] { "3", "4"};
         List<String> a = Arrays.asList(arrayA);
         List<String> b = Arrays.asList(arrayB);
         //并集
@@ -35,7 +35,7 @@ public class Test1 {
         System.out.println("--------------------------------------------");
         System.out.println("Union(A, B): " + ArrayUtils.toString(union.toArray()));
         System.out.println("Intersection(A, B): " + ArrayUtils.toString(intersection.toArray()));
-        System.out.println("Disjunction(A, B): " + ArrayUtils.toString(disjunction.toArray()));
+        System.out.println("Disjunction(A, B): " + disjunction.toString());
         System.out.println("Subtract(A, B): " + ArrayUtils.toString(subtract.toArray()));
     }
 }
